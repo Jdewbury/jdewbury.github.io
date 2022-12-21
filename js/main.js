@@ -20,3 +20,4 @@ const observer = new IntersectionObserver(entries => {
       x.className = "navbar";
     }
   }
+  
