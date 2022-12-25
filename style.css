@@ -194,6 +194,7 @@ html, body{
   .main a{
     color:#506de1;
     border-bottom: 0.1px #a6b7fc dotted;
+    transition: 0.3s;
   }
 
   .main a:hover{
