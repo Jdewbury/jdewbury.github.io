@@ -8,12 +8,8 @@ const observer = new IntersectionObserver(entries => {
       }
     });
   });
-  observer.observe(document.querySelector('.about'));
-  observer.observe(document.querySelector('.experience'));
-  observer.observe(document.querySelector('.job1'));
-  observer.observe(document.querySelector('.job2'));
-  observer.observe(document.querySelector('.job3'));
-  observer.observe(document.querySelector('.job4'));
+  observer.observe(document.querySelector('.post1'));
+  observer.observe(document.querySelector('.post2'));
   
 
   function myFunction() {
