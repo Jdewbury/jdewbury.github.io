@@ -240,12 +240,12 @@ html, body{
   }
   
   .jobtitle {
-    font-size: 18px;
+    font-size: 16px;
     color: #222222;
   }
 
   .employer {
-    font-size: 15px;
+    font-size: 14px;
     color: #506de1;
     transition: 0.3s;
   }
@@ -262,7 +262,7 @@ html, body{
   }
 
   .jobdesc {
-    font-size: 14px;
+    font-size: 13.5px;
     color: #222222;
   }
   
@@ -322,6 +322,7 @@ html, body{
     color: #222222;
     display: inline;
     padding-bottom: 5pt;
+    transition: 0.3s;
   }
 
   .postdesc {
