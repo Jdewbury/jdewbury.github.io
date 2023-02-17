@@ -228,7 +228,7 @@ html, body{
 
 .job {
     width: 90%;
-    margin-left: 115px;
+    margin-left: 105px;
     margin-right: 30px;
   }
 
@@ -259,11 +259,6 @@ html, body{
     font-size: 12px;
     font-weight:lighter;
     color: #646464;
-  }
-
-  .jobdesc {
-    font-size: 13.5px;
-    color: #222222;
   }
   
   .joblogo{
