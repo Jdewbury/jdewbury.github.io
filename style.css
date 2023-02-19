@@ -177,16 +177,16 @@ html, body{
   }
 
   .main {
-    padding-right: 21vw;
-    padding-left: 21vw;
+    padding-right: 24vw;
+    padding-left: 24vw;
     position:relative;
     height: 100%; 
     overflow: hidden;
   }
   @media screen and (max-width: 1220px) {
     .main{
-        padding-right: 15vw;
-        padding-left: 15vw;
+        padding-right: 16vw;
+        padding-left: 16vw;
         transition: 0.5s;
     }
   }
@@ -205,6 +205,7 @@ html, body{
 /* About content */
   .about {
     color: #333;
+    text-align: justify;
   }
 
 .main .icon{
@@ -268,7 +269,10 @@ html, body{
     float:left;
   }
 
-
+  .blog {
+    width: 90%;
+    transition: 0.5s;
+  }
 
   .post {
     width: 90%;
@@ -280,6 +284,10 @@ html, body{
   }
 
   @media screen and (max-width: 650px) {
+    .blog {
+      width: 80%;
+      transition: 0.3s;
+    }
     .post {
       width: 80%;
       transition: 0.3s;
@@ -313,11 +321,12 @@ html, body{
   }
   
   .posttitle {
-    font-size: 18px;
+    font-size: 17px;
     color: #222222;
     display: inline;
     padding-bottom: 5pt;
     transition: 0.3s;
+    text-align: left;
   }
 
   .postdesc {

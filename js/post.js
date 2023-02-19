@@ -8,8 +8,8 @@ const observer = new IntersectionObserver(entries => {
       }
     });
   });
-  observer.observe(document.querySelector('.post1'));
-  observer.observe(document.querySelector('.post2'));
+  observer.observe(document.querySelector('.blog'));
+  observer.observe(document.querySelector('.post'));
   
 
   function myFunction() {
