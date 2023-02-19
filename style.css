@@ -54,7 +54,7 @@ html, body{
     height: 120px;
     animation: fadeIn 2.5s;
     padding-right: 20vw;
-    padding-left: 20vw;
+    padding-left: 22vw;
     padding-top: 50px;
     font-weight: 500;
     z-index: 3;
@@ -95,44 +95,58 @@ html, body{
   }
 /* time to hardcode my navbar spacing */
   .space {
-    width: 31vw;
+    width: 30vw;
+  }
+
+  .profile {
+    width:15vw;
+    height:auto;
+    display:inline;
+    min-width:180px;
+    float:left;
+    margin-right:40px;
+    margin-bottom:1.4vw;
+    margin-top:25px;
+    filter:grayscale(95%);
   }
 
   @media screen and (max-width: 1420px) {
     .space{
-        width: 27vw;
+      width: 26vw;
+    }
+    .navbar {
+      padding-right: 12vw;
     }
   }
 
   @media screen and (max-width: 1230px) {
-    .space{
-            width: 24vw;
-        }
+    .navbar {
+        padding-left: 21vw;
+      }
    }
 
    @media screen and (max-width: 1155px) {
     .space{
-        width: 21vw;
+        width: 24vw;
         }
    }
 
    @media screen and (max-width: 1110px) {
     .space{
-        width: 19vw;
-        }
+        width: 37vw;
+      }
+      .navbar {
+        padding-left: 13vw;
+        padding-right: 5vw;
+      }
    }
 
    @media screen and (max-width: 977px) {
     .space{
-        width: 15vw;
-        }
+      width: 34vw;
+    }
    }
 
-   @media screen and (max-width: 977px) {
-    .space{
-        width: 10vw;
-        }
-   }
 
   
   @media screen and (max-width: 875px) {
@@ -141,6 +155,12 @@ html, body{
       float: right;
       display: block;
       transition: none;
+    }
+    .space{
+      width: 5vw;
+    }
+    .navbar {
+      padding-right: 16vw;
     }
   }
   
@@ -155,7 +175,7 @@ html, body{
       position: absolute;
       right: 0;
       top: 0;
-      margin-right: 20vw;
+      margin-right: 16vw;
       padding-top: 80px;
     }
     .navbar.responsive a {
@@ -176,14 +196,24 @@ html, body{
     }
   }
 
+  @media screen and (max-width: 550px) {
+    .profile {
+      display:block;
+      margin-right:400px;
+      margin-bottom: 30px;
+    }
+   }
+
+
+
   .main {
     padding-right: 24vw;
     padding-left: 24vw;
-    position:relative;
+    position: relative;
     height: 100%; 
     overflow: hidden;
   }
-  @media screen and (max-width: 1220px) {
+  @media screen and (max-width: 1120px) {
     .main{
         padding-right: 16vw;
         padding-left: 16vw;
