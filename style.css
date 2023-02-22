@@ -1,11 +1,16 @@
 /* The navigation bar */
+@font-face {
+	font-family: 'Times New Roman';
+	src: url("./Times_New_roman.ttf");
+}
 
 html, body{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Times New Roman', serif;
     overflow-y: auto;
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-weight: medium;
+    font-size: 14px;
     }
 
 .fadeinup{
@@ -69,12 +74,12 @@ html, body{
     padding-right: 17.5px;
     padding-left: 17.5px;
     padding-top: 30px;
-    font-size: 16px;
+    font-size: 17px;
     transition: 0.3s;
     }
 
   .navbar a:hover {
-    color: #506de1;
+    color: #4f4395;
     transition: 0.3s;
     -webkit-transform: translateY(-2px);
 	  -ms-transform:     translateY(-2px);
@@ -95,7 +100,7 @@ html, body{
   }
 /* time to hardcode my navbar spacing */
   .space {
-    width: 30vw;
+    width: 37vw;
   }
 
   .profile {
@@ -112,7 +117,7 @@ html, body{
 
   @media screen and (max-width: 1420px) {
     .space{
-      width: 26vw;
+      width: 33vw;
     }
     .navbar {
       padding-right: 12vw;
@@ -127,13 +132,13 @@ html, body{
 
    @media screen and (max-width: 1155px) {
     .space{
-        width: 24vw;
+        width: 31vw;
         }
    }
 
    @media screen and (max-width: 1110px) {
     .space{
-        width: 37vw;
+        width: 44vw;
       }
       .navbar {
         padding-left: 13vw;
@@ -143,7 +148,7 @@ html, body{
 
    @media screen and (max-width: 977px) {
     .space{
-      width: 34vw;
+      width: 44vw;
     }
    }
 
@@ -157,7 +162,7 @@ html, body{
       transition: none;
     }
     .space{
-      width: 5vw;
+      width: 12vw;
     }
     .navbar {
       padding-right: 16vw;
@@ -182,13 +187,14 @@ html, body{
       float: none;
       display: block;
       text-align: left;
+      font-size: 20px;
     }
     .navbar.responsive a:nth-child(2) {
         float: none;
         display: block;
         text-align: left;
-        margin-top: 20px;
-      }
+        margin-top: 60px;
+    }
     .space {
         margin-top: -20px;
         width: 0px;
@@ -222,13 +228,13 @@ html, body{
   }
 
   .main a{
-    color:#506de1;
-    border-bottom: 0.1px #a6b7fc dotted;
+    color:#4f4395;
+    border-bottom: 0.1px #a5a5a5 dotted;
     transition: 0.3s;
   }
 
   .main a:hover{
-    color:#b849e8;
+    color:#a546b5;
     transition: 0.3s;
   }
 
@@ -238,67 +244,20 @@ html, body{
     text-align: justify;
   }
 
-.main .icon{
-    font-size: 16px;
-    font-weight: bold;
-    display:inline;
-    padding-bottom: 5px;
-}
+  .main .icon{
+      font-size: 16px;
+      font-weight: bold;
+      display:inline;
+      padding-bottom: 5px;
+  }
+
+  .news b {
+    font-size: 15px;
+    padding-right: 6px;
+    padding-left: 3px;
+  }
+
   
-
-.experience {
-    color: #506de1;
-    font-size: 14px;
-  }
-
-.title {
-    color: #333;
-    font-size: 24px;
-    font-weight: medium;
-}
-
-.job {
-    width: 90%;
-    margin-left: 105px;
-    margin-right: 30px;
-  }
-
-  @media screen and (max-width: 650px) {
-    .job {
-      width: 70%;
-      transition: 0.3s;
-    }
-  }
-  
-  .jobtitle {
-    font-size: 16px;
-    color: #222222;
-  }
-
-  .employer {
-    font-size: 14px;
-    color: #506de1;
-    transition: 0.3s;
-  }
-
-  .employer:hover {
-    color:#b849e8;
-    transition: 0.3s;
-  }
-  
-  .jobinfo {
-    font-size: 12px;
-    font-weight:lighter;
-    color: #646464;
-  }
-  
-  .joblogo{
-    height: 50px;
-    width: auto;
-    display: inline;
-    float:left;
-  }
-
   .blog {
     width: 90%;
     transition: 0.5s;
@@ -344,9 +303,9 @@ html, body{
 
   .post c{
     font-size: 12px;
-    border: 1pt solid #506de1;
+    border: 1pt solid #4f4395;
     border-radius: 3pt;
-    color: #506de1;
+    color: #4f4395;
     padding: 1pt 3pt;
   }
   
