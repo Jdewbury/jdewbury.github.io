@@ -16,14 +16,14 @@ html, body{
 .fadeinup{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation: fadeInAndUpAnimation ease 2s;
+    animation: fadeInAndUpAnimation ease 1.2s;
     }   
 
     @keyframes fadeInAndUpAnimation {
     0% {
         opacity: 0;
     }
-    60% {
+    40% {
         -webkit-transform: translateY(200px);
         -ms-transform:     translateY(200px);
         transform:         translateY(200px);
@@ -39,7 +39,7 @@ html, body{
         0% {
             opacity: 0;
         }
-        45% {
+        40% {
             opacity: 0;
         }
         100% {
@@ -57,7 +57,7 @@ html, body{
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     height: 120px;
-    animation: fadeIn 2.5s;
+    animation: fadeIn 1.2s;
     padding-right: 20vw;
     padding-left: 22vw;
     padding-top: 50px;
