@@ -1,24 +1,29 @@
 /* The navigation bar */
+@font-face {
+	font-family: 'Times New Roman';
+	src: url("./Times_New_roman.ttf");
+}
 
 html, body{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Times New Roman', serif;
     overflow-y: auto;
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-weight: medium;
+    font-size: 14px;
     }
 
 .fadeinup{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation: fadeInAndUpAnimation ease 2s;
+    animation: fadeInAndUpAnimation ease 1.2s;
     }   
 
     @keyframes fadeInAndUpAnimation {
     0% {
         opacity: 0;
     }
-    60% {
+    40% {
         -webkit-transform: translateY(200px);
         -ms-transform:     translateY(200px);
         transform:         translateY(200px);
@@ -34,7 +39,7 @@ html, body{
         0% {
             opacity: 0;
         }
-        45% {
+        40% {
             opacity: 0;
         }
         100% {
@@ -52,9 +57,9 @@ html, body{
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     height: 120px;
-    animation: fadeIn 2.5s;
+    animation: fadeIn 1.2s;
     padding-right: 20vw;
-    padding-left: 20vw;
+    padding-left: 22vw;
     padding-top: 50px;
     font-weight: 500;
     z-index: 3;
@@ -69,12 +74,12 @@ html, body{
     padding-right: 17.5px;
     padding-left: 17.5px;
     padding-top: 30px;
-    font-size: 16px;
+    font-size: 17px;
     transition: 0.3s;
     }
 
   .navbar a:hover {
-    color: #506de1;
+    color: #4f4395;
     transition: 0.3s;
     -webkit-transform: translateY(-2px);
 	  -ms-transform:     translateY(-2px);
@@ -95,44 +100,58 @@ html, body{
   }
 /* time to hardcode my navbar spacing */
   .space {
-    width: 31vw;
+    width: 37vw;
+  }
+
+  .profile {
+    width:15vw;
+    height:auto;
+    display:inline;
+    min-width:180px;
+    float:left;
+    margin-right:40px;
+    margin-bottom:1.4vw;
+    margin-top:25px;
+    filter:grayscale(95%);
   }
 
   @media screen and (max-width: 1420px) {
     .space{
-        width: 27vw;
+      width: 33vw;
+    }
+    .navbar {
+      padding-right: 12vw;
     }
   }
 
   @media screen and (max-width: 1230px) {
-    .space{
-            width: 24vw;
-        }
+    .navbar {
+        padding-left: 21vw;
+      }
    }
 
    @media screen and (max-width: 1155px) {
     .space{
-        width: 21vw;
+        width: 31vw;
         }
    }
 
    @media screen and (max-width: 1110px) {
     .space{
-        width: 19vw;
-        }
+        width: 44vw;
+      }
+      .navbar {
+        padding-left: 13vw;
+        padding-right: 5vw;
+      }
    }
 
    @media screen and (max-width: 977px) {
     .space{
-        width: 15vw;
-        }
+      width: 44vw;
+    }
    }
 
-   @media screen and (max-width: 977px) {
-    .space{
-        width: 10vw;
-        }
-   }
 
   
   @media screen and (max-width: 875px) {
@@ -141,6 +160,12 @@ html, body{
       float: right;
       display: block;
       transition: none;
+    }
+    .space{
+      width: 12vw;
+    }
+    .navbar {
+      padding-right: 16vw;
     }
   }
   
@@ -155,20 +180,21 @@ html, body{
       position: absolute;
       right: 0;
       top: 0;
-      margin-right: 20vw;
+      margin-right: 16vw;
       padding-top: 80px;
     }
     .navbar.responsive a {
       float: none;
       display: block;
       text-align: left;
+      font-size: 20px;
     }
     .navbar.responsive a:nth-child(2) {
         float: none;
         display: block;
         text-align: left;
-        margin-top: 20px;
-      }
+        margin-top: 60px;
+    }
     .space {
         margin-top: -20px;
         width: 0px;
@@ -176,103 +202,66 @@ html, body{
     }
   }
 
+  @media screen and (max-width: 550px) {
+    .profile {
+      display:block;
+      margin-right:400px;
+      margin-bottom: 30px;
+    }
+   }
+
+
+
   .main {
-    padding-right: 21vw;
-    padding-left: 21vw;
-    position:relative;
+    padding-right: 24vw;
+    padding-left: 24vw;
+    position: relative;
     height: 100%; 
     overflow: hidden;
   }
-  @media screen and (max-width: 1220px) {
+  @media screen and (max-width: 1120px) {
     .main{
-        padding-right: 15vw;
-        padding-left: 15vw;
+        padding-right: 16vw;
+        padding-left: 16vw;
         transition: 0.5s;
     }
   }
 
   .main a{
-    color:#506de1;
-    border-bottom: 0.1px #a6b7fc dotted;
+    color:#4f4395;
+    border-bottom: 0.1px #a5a5a5 dotted;
+    transition: 0.3s;
   }
 
   .main a:hover{
-    color:#b849e8;
+    color:#a546b5;
     transition: 0.3s;
   }
 
 /* About content */
   .about {
     color: #333;
+    text-align: justify;
   }
 
-.main .icon{
-    font-size: 16px;
-    font-weight: bold;
-    display:inline;
-    padding-bottom: 5px;
-}
-  
-
-.experience {
-    color: #506de1;
-    font-size: 14px;
+  .main .icon{
+      font-size: 16px;
+      font-weight: bold;
+      display:inline;
+      padding-bottom: 5px;
   }
 
-.title {
-    color: #333;
-    font-size: 24px;
-    font-weight: medium;
-}
-
-.job {
-    width: 90%;
-    margin-left: 115px;
-    margin-right: 30px;
-  }
-
-  @media screen and (max-width: 650px) {
-    .job {
-      width: 70%;
-      transition: 0.3s;
-    }
-  }
-  
-  .jobtitle {
-    font-size: 18px;
-    color: #222222;
-  }
-
-  .employer {
+  .news b {
     font-size: 15px;
-    color: #506de1;
-    transition: 0.3s;
+    padding-right: 6px;
+    padding-left: 3px;
   }
 
-  .employer:hover {
-    color:#b849e8;
-    transition: 0.3s;
-  }
   
-  .jobinfo {
-    font-size: 12px;
-    font-weight:lighter;
-    color: #646464;
+  .blog {
+    width: 90%;
+    transition: 0.5s;
   }
-
-  .jobdesc {
-    font-size: 14px;
-    color: #222222;
-  }
-  
-  .joblogo{
-    height: 50px;
-    width: auto;
-    display: inline;
-    float:left;
-  }
-
-
 
   .post {
     width: 90%;
@@ -284,6 +273,10 @@ html, body{
   }
 
   @media screen and (max-width: 650px) {
+    .blog {
+      width: 80%;
+      transition: 0.3s;
+    }
     .post {
       width: 80%;
       transition: 0.3s;
@@ -310,17 +303,19 @@ html, body{
 
   .post c{
     font-size: 12px;
-    border: 1pt solid #506de1;
+    border: 1pt solid #4f4395;
     border-radius: 3pt;
-    color: #506de1;
+    color: #4f4395;
     padding: 1pt 3pt;
   }
   
   .posttitle {
-    font-size: 18px;
+    font-size: 17px;
     color: #222222;
     display: inline;
     padding-bottom: 5pt;
+    transition: 0.3s;
+    text-align: left;
   }
 
   .postdesc {
