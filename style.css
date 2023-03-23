@@ -52,12 +52,11 @@ html, body{
     overflow: hidden;
     position: fixed;
     width: 100%;
-    background-color: #222222;
+    background-color: #000;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     height: 120px;
-    animation: fadeIn 1.2s;
     padding-right: 20vw;
     padding-left: 22vw;
     padding-top: 50px;
@@ -81,9 +80,6 @@ html, body{
   .navbar a:hover {
     color: #4f4395;
     transition: 0.3s;
-    -webkit-transform: translateY(-2px);
-	  -ms-transform:     translateY(-2px);
-	  transform:         translateY(-2px);
   }
 
   .navbar a.active {
@@ -205,8 +201,9 @@ html, body{
   @media screen and (max-width: 550px) {
     .profile {
       display:block;
-      margin-right:400px;
+      margin-right:500px;
       margin-bottom: 30px;
+      margin-left: auto;
     }
    }
 
@@ -248,7 +245,7 @@ html, body{
       font-size: 16px;
       font-weight: bold;
       display:inline;
-      padding-bottom: 5px;
+      margin-bottom: -20px;
   }
 
   .news b {
@@ -290,9 +287,9 @@ html, body{
   .post:hover {
     opacity: 60%;
     transition: 0.5s;
-    -webkit-transform: translateY(-4px);
-	  -ms-transform:     translateY(-4px);
-	  transform:         translateY(-4px);
+    -webkit-transform: translateY(-10px);
+	  -ms-transform:     translateY(-10px);
+	  transform:         translateY(-10px);
   }
 
   .post b{
