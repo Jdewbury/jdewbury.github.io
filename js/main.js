@@ -22,3 +22,9 @@ const observer = new IntersectionObserver(entries => {
     }
   }
   
+  function navigateToAbout(event) {
+      event.preventDefault();
+      window.history.replaceState({}, "", "/about");
+    // Here you can add any additional logic you need, such as scrolling to the element with id="about"
+    document.getElementById("about").scrollIntoView();
+  }
