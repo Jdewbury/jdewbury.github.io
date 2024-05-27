@@ -119,6 +119,8 @@ html, body {
 }
 
 .news-date {
+  color: #4f4395;
+  padding-top: 1px;
   width: 70px;
   font-weight: bold;
   font-size: 12px;
